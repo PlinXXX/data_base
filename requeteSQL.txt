@@ -16,7 +16,7 @@ DELETE FROM albums
 ----Récupérer tous les albums écrits par AC/DC
 select ArtistID from artists
  where Name = 'AC/DC';
-
+==> 1
 SELECT * FROM albums
  WHERE ArtistID = 1;
 
@@ -25,6 +25,9 @@ SELECT Title FROM albums
  WHERE ArtistID = 1;
 
 ----Récupérer la liste des titres de l'album "Let There Be Rock"
+SELECT AlbumID FROM albums
+ WHERE Title = 'Let There Be Rock';
+==> 4
 SELECT Name FROM tracks
  WHERE AlbumID = 4;
 
@@ -45,5 +48,29 @@ WHERE AlbumID IN (59,61);
 
 
 ----Créer l'album de ton artiste favori en base, en renseignant correctement les trois tables albums, artists et tracks
+1. cp chinook.db Mychinook.db
 
+2. SELECT * FROM albums 
+   WHERE Title = 'International Superhits';
+   ==> AlbumID = 39
+   ==> ArtistID = 54 
+
+3.
+---------------------------------------------------
+CREATE TABLE F_albums AS
+   ...> SELECT AlbumID, Title, ArtistID FROM albums 
+   ...> WHERE AlbumID = 39;
+---------------------------------------------------
+CREATE TABLE F_tracks AS
+   ...> SELECT TrackID, Name, AlbumID FROM tracks
+   ...> WHERE AlbumID = 39;
+---------------------------------------------------
+CREATE TABLE F_artists AS
+   ...> SELECT * FROM artists 
+   ...> WHERE ArtistID = 54;
+---------------------------------------------------
+
+
+
+	   
 
