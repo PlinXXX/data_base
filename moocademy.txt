@@ -1,28 +1,28 @@
 ---------------------------------------------------------------------------
-|cours_id	titre :		description:                              |
+|id	titre       		description                                       | 
 ---------------------------------------------------------------------------
-|1		+ Maths		C'est dur mais c'est juste	          |  
-|2		+ Physique	L'etude de tous ce qui nous entoure       |
-|3		+ SVT		L'etude de la vie et de la terre          |
-|4		+ Geographie	C'est utile quand tu te perd dans la foret|
-|5		+ Français	I don't know what does it mean            | 
+|1		+ Maths				Il faut avoir la tete dure pour y plonger         |   
+|2		+ Physique			Etude de tous ce qui nous entoure                 |
+|3		+ SVT					Etude de la vie et de la terre                    |
+|4		+ Geographie		Utile quand tu te perd dans la foret              |
+|5		+ Français			I don't know what does it mean                    | 
 |-------------------------------------------------------------------------|
-|		-Maths: - Algebre: {Tous un tas de theoreme}              |
-|			- Analyse: {Tous un tas de theorie}               |
-|			- Geometrie: {Pour bien etre en forme}            | 
-|		                                                          |
-|		-Physique: - Electrocinetique:                            |
-|			   - Electromagnetique:                           |  
-|			   - Electrostatique:                             | 
-|			   - Mecanique:                                   |
+|1		-Maths: - Algebre: {Tous un tas de theoreme}                        |
+|			     - Analyse: {Tous un tas de theorie}                         |
+|			     - Geometrie: {Pour bien etre en forme}                      | 
+|		                                                                    |
+|2		-Physique: - Electrocinetique:                                      |
+|			   - Electromagnetique:                                          |  
+|			   - Electrostatique:                                            | 
+|			   - Mecanique:                                                  |
 |                                                                         |
-|		-SVT: - Biologie                                          | 
-|		      - Geologie                                          |
+|3		-SVT: - Biologie                                                    |  
+|		      - Geologie                                                    |
 |                                                                         |   
-|		-Geographie: - Les planetes                               |
-|			     - Les roches                                 |  
+|4		-Geographie: - Les planetes                                         |
+|			          - Les roches                                           |  
 |                                                                         |
-|		-Francais: - Qui                                          | 
-|			   - Quoi                                         |
-|			   - Comment                                      | 
+|5		-Francais: - Qui                                                    |  
+|			        - Quoi                                                   |
+|			        - Comment                                                | 
 |_________________________________________________________________________|
