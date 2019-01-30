@@ -1,0 +1,49 @@
+
+----Récupérer tous les albums
+SELECT * FROM albums;
+ 
+----Récupérer tous les albums dont le titre contient "Great" (indice)
+SELECT * FROM albums
+ WHERE Title LIKE '%Great%';
+
+----Donner le nombre total d'albums contenus dans la base (sans regarder les id bien sûr)
+SELECT COUNT(*) FROM albums;
+
+----Supprimer tous les albums dont le nom contient "music"
+DELETE FROM albums
+ WHERE Title LIKE '%music%';
+
+----Récupérer tous les albums écrits par AC/DC
+select ArtistID from artists
+ where Name = 'AC/DC';
+
+SELECT * FROM albums
+ WHERE ArtistID = 1;
+
+----Récupérer tous les titres des albums de AC/DC
+SELECT Title FROM albums
+ WHERE ArtistID = 1;
+
+----Récupérer la liste des titres de l'album "Let There Be Rock"
+SELECT Name FROM tracks
+ WHERE AlbumID = 4;
+
+----Afficher le prix de cet album ainsi que sa durée totale
+SELECT Name, UnitPrice, Milliseconds/60000 FROM tracks
+ WHERE AlbumID = 4;
+SELECT SUM(Unitprice), SUM(Milliseconds/60000) FROM tracks
+   ...> WHERE AlbumID = 4
+   ...> GROUP BY AlbumID;
+
+
+----Afficher le coût de l'intégralité de la discographie de "Deep Purple"
+SELECT AlbumID FROM albums 
+WHERE Title like "%Deep Purple%";
+==> 59, 61
+SELECT sum(Milliseconds/60000)'Durée(min)', sum(Bytes/1000000)'Taille(Mb)', sum(UnitPrice)'$' FROM tracks 
+WHERE AlbumID IN (59,61);
+
+
+----Créer l'album de ton artiste favori en base, en renseignant correctement les trois tables albums, artists et tracks
+
+

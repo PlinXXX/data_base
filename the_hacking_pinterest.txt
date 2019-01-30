@@ -1,0 +1,12 @@
+un site où 
+	les "utilisateurs" peuvent 
+	créer des "pins". 
+		Chaque pin contient l'URL d'une image sur le net. 
+	Les utilisateurs peuvent commenter les pins, 
+	mais ne peuvent pas commenter les commentaires.
+
+The Hacking Pinterest site :
+
+Users |----> create 'pin': --> url d'une image sur le net
+      |
+      |----> comment a 'pin'
